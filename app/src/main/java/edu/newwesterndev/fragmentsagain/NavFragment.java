@@ -1,6 +1,5 @@
 package edu.newwesterndev.fragmentsagain;
 
-
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
@@ -21,11 +20,9 @@ public class NavFragment extends Fragment {
 
     NavInterface parent;
 
-
     public NavFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
