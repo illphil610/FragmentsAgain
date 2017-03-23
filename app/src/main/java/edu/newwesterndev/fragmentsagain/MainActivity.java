@@ -16,7 +16,9 @@ public class MainActivity extends Activity implements NavFragment.NavInterface{
         detailsFragment = new DetailsFragment();
 
         addFragment(new NavFragment(), R.id.frame1);
-        addFragment(detailsFragment, R.id.frame2);
+
+        if(findViewById(R.id.frame2) != null)
+            addFragment(detailsFragment, R.id.frame2);
     }
 
     private void addFragment(Fragment fragment, int containerId){
